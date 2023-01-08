@@ -1,0 +1,2 @@
+[install.bat] - https://pastebin.com/raw/iPLmJ7ws
+[pyupgrade.py] - https://pastebin.com/raw/8gX3heGA
