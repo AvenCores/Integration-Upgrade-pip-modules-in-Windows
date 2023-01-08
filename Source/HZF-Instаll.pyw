@@ -5,6 +5,7 @@ import ctypes as ct
 
 root = Tk()
 root.title('HZF pyupgrade install')
+root.configure(bg='#000000')
 root.geometry('300x250')
 root.resizable(width=False, height=False)
 
@@ -25,10 +26,10 @@ ufr = get("https://i.imgur.com/HG0sFE0.png")
 f.write(ufr.content)
 f.close()
 
-canvas = Canvas(root, height=400, width=400)
+canvas = Canvas(root, height=100, width=100)
 canvas.pack()
 logoimg = PhotoImage(file='pylogo.png')
-renderImg = canvas.create_image(150,75, image=logoimg)
+renderImg = canvas.create_image(53,60, image=logoimg)
 
 def installupgr():
     system("del /Q pyupgrade.py")
@@ -57,7 +58,7 @@ rem = Button(text='Удалить скрипт', bg="red", fg="white", command=r
 rem.place(x=100, y=180)
 
 poetry = 't.me/hzfnews'
-label3 = Label(text=poetry, justify=CENTER)
+label3 = Label(text=poetry, bg="#000000", fg="white", justify=CENTER)
 label3.place(x=5, y=225)
 
 root.deiconify()
