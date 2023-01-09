@@ -26,10 +26,10 @@ ufr = get("https://i.imgur.com/HG0sFE0.png")
 f.write(ufr.content)
 f.close()
 
-canvas = Canvas(root, height=100, width=100)
+canvas = Canvas(root, bg="#000000", width=100, height=100)
 canvas.pack()
 logoimg = PhotoImage(file='pylogo.png')
-renderImg = canvas.create_image(53,60, image=logoimg)
+canvas.create_image(53,60, image=logoimg)
 
 def installupgr():
     system("del /Q pyupgrade.py")
